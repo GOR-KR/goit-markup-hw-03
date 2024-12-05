@@ -2,18 +2,38 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #FFFFFF;
+    min-height: 100vh;
 }
-h2 {
+
+h1, h2, h3, h4, h5, h6, p {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11111;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-top: 0;
+    margin-bottom: 0;   
 }
+
 ul {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 button {
     cursor: pointer;
 }
@@ -22,6 +42,11 @@ a {
     color: #2E2F42;
     text-decoration: none;
     font-style: normal;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .header {
@@ -34,13 +59,34 @@ a {
     color: #404bbf;
 }
 
-.contact {
-    font-style: normal;
+.header .container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.nav {
+    display: flex;
+    gap: 76px;
+}
+
+.nav .link {
+    display: block;
+
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
 }
 
 .contact .link {
+    display: block;
     font-style: normal;
     color:#434455;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header .link:hover, .header .link:focus  {
@@ -63,7 +109,16 @@ nav .accent {
 
 .hero {
     background-color: #2e2f42;
-    }
+}
+
+.hero .container {
+    padding-top: 188px;
+    padding-left: 330px;
+    padding-bottom: 188px;
+    padding-right: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .hero-text {
     font-weight: 700;
@@ -73,9 +128,10 @@ nav .accent {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin-bottom: 48px;
 }
 
-.hero-btn {
+.hero-btn {display: block;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     line-height: 1.5;
@@ -84,6 +140,9 @@ nav .accent {
     text-align: center;
     color: #fff;
     background-color: #4d5ae5;
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin: 0 auto;
 }   
 
 .hero-btn:hover, .hero-btn:focus {
@@ -92,7 +151,31 @@ nav .accent {
 
 .main {
     background-color: #FFFFFF;
-    color: #2e2f42;  
+    color: #2e2f42;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-list {
+    display: flex;
+}
+
+.list-item:not(:last-child) {
+     margin-right: 24px;
 }
 
 .main-li {
@@ -101,6 +184,8 @@ nav .accent {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: left;
+    margin-bottom: 8px;
 }
 
 .li-text {
@@ -108,10 +193,17 @@ nav .accent {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: left;
+    margin-top: 0;
 }
 
 .team {
     background: #f4f4fd;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .our-team {
@@ -121,21 +213,60 @@ nav .accent {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    text-transform: capitalize
+    text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team-li {
     background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-li img {
+    margin-bottom: 32px;
+}
+
+.team-li .main-li, .team-li .li-text {
+    text-align: center;
 }
 
 .portfolio {
     background-color: #FFFFFF;
     
-}   
+} 
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px; 
+    /* column-gap: 48px;
+    row-gap: 24px; */
+    
+}
+
+.portfolio-li {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.portfolio-li img {
+    margin-bottom: 32px;
+}
 
 .ftr {
     background-color: #2e2f42;
     color: #f4f4fd;
+
+} 
+
+.ftr .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
 }
 
 .ftr .logo {
@@ -146,6 +277,7 @@ nav .accent {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-bottom: 16px;
 }
 
 .ftr .accent {
@@ -153,7 +285,13 @@ nav .accent {
 }
 
 .ftr-text {
+    display: block;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #f4f4fd;
+    text-align: left;
+    margin-top: 0;
+    width: 264px;
+
 }
