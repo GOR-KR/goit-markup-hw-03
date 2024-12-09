@@ -45,7 +45,6 @@ a {
 
 .header {
     background-color: #FFFFFF;
-    font-weight: 500;
     font-size: 16px;
     /* line-height: 24px; */
     line-height: 1.5;
@@ -66,9 +65,7 @@ a {
 }
 
 .nav .link {
-    display: block;
-    margin-right: 76px;
-
+    font-weight: 500;
 }
 
 .header-list {
@@ -78,13 +75,14 @@ a {
 
 .header-list .link {
     padding: 24px 0;
+    display: block;
 }
 
 /* .contact .link {
     display: block;
     font-style: normal;
     color:#434455;
-    padding-top: 24px;
+    padding-top: 24px; 
     padding-bottom: 24px;
 } */
 
@@ -100,6 +98,7 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 nav .accent {
@@ -112,10 +111,7 @@ nav .accent {
 }
 
 .hero .container {
-    padding-left: 330px;
-    padding-right: 330px;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 .hero-text {
@@ -126,7 +122,7 @@ nav .accent {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    margin-bottom: 48px;
+    margin: 0 auto 48px;
     max-width: 496px
 }
 
@@ -152,10 +148,6 @@ nav .accent {
 }
 
 .main {
-    background-color: #FFFFFF;
-    color: #2e2f42;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .visually-hidden {
@@ -174,15 +166,16 @@ nav .accent {
 
 .main-list {
     display: flex;
+    gap: 24px;
 }
 
 .list-item {
     width: calc((100% - 72px) / 4);
 }
 
-.list-item:not(:last-child) {
+/* .list-item:not(:last-child) {
      margin-right: 24px;
-}
+} */
 
 .main-li {
     font-weight: 500;
@@ -227,6 +220,7 @@ nav .accent {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    width: calc((100% - 72px) / 4);
 }
     
 .teammate-name {
@@ -234,8 +228,7 @@ nav .accent {
 }
 
 .team-li img {
-    margin-top: 0;
-    margin-bottom: 32px;
+
 }
 
 .team-li .main-li {
@@ -266,14 +259,13 @@ nav .accent {
 }
 
 .foto {
-    margin-bottom: 32px;
+
 }
 
 .app-name {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    margin-bottom: 8px;
 }
 
 .app-name .main-list {
@@ -295,13 +287,7 @@ nav .accent {
 
 .ftr .logo {
     display: inline-block;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
+    margin-right: 0;
     margin-bottom: 16px;
 }
 
